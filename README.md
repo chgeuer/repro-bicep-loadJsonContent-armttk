@@ -32,7 +32,7 @@ results in ARM JSON representation
 }
 ```
 
-which causes ARM-TTK to complain
+which causes [ARM-TTK](https://github.com/Azure/arm-ttk) to complain
 
 ```text
 [-] Variables Must Be Referenced (124 ms)
