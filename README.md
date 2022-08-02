@@ -4,7 +4,17 @@
 var myVar = loadJsonContent('config.json')
 ```
 
-results in JSON
+with the `config.json` containing
+
+```json
+{
+	"uami": {
+		"name": "myuami"
+	} 
+}
+```
+
+results in ARM JSON representation
 
 ```json
 {
@@ -28,3 +38,8 @@ which causes ARM-TTK to complain
 [-] Variables Must Be Referenced (124 ms)
     Unreferenced variable: $fxv#0
 ```
+
+## Christmas wishlist
+
+- Bicep should avoid creating this strange proxy variable `$fxv#0`
+- ARM-TTK should understand that `$fxv#0` is actually referenced 
