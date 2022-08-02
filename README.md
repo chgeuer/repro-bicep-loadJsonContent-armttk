@@ -41,14 +41,16 @@ which causes [ARM-TTK](https://github.com/Azure/arm-ttk) to complain
 
 ## Christmas wishlist
 
-- Bicep should avoid creating this strange proxy variable `$fxv#0`
-  - ```json
-  {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-  "contentVersion": "1.0.0.0",
+### Bicep should avoid creating this strange proxy variable `$fxv#0`
+
+ ```json
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#", "contentVersion": "1.0.0.0",
   "variables": {
     "myVar": { "uami": { "name": "myuami" } }
   },
   "resources": [...]
-}```
-- ARM-TTK should understand that `$fxv#0` is actually referenced 
+}
+```
+
+### ARM-TTK should understand that `$fxv#0` is actually referenced 
